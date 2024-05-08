@@ -111,7 +111,7 @@
             
         <div class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1715131879177_4 closed">
+<div class="hamburger-menu_1715132179409_339 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -140,13 +140,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1715131879177_4').classList.remove('open');
-    document.querySelector('.hamburger-menu_1715131879177_4').classList.add('closed');
+    document.querySelector('.hamburger-menu_1715132179409_339').classList.remove('open');
+    document.querySelector('.hamburger-menu_1715132179409_339').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1715131879177_4').classList.add('open');
-    document.querySelector('.hamburger-menu_1715131879177_4').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1715132179409_339').classList.add('open');
+    document.querySelector('.hamburger-menu_1715132179409_339').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -156,7 +156,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1715131879177_4').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1715132179409_339').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -164,10 +164,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1715131879177_4 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1715132179409_339 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1715131879177_4 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1715132179409_339 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -195,7 +195,7 @@
             
         <div class="editable-style silex-id-1483140123370-22 text-element">
                 <div class="silex-element-content normal"><h2>Contact us<br></h2></div>
-            </div><div class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1715131879180_944" action="https://formspree.io/your@email.com" method="POST">
+            </div><div class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1715132179408_303" action="https://formspree.io/your@email.com" method="POST">
   
   <div>
     <label for="field1">Name</label>
@@ -218,21 +218,21 @@
 </form>
 
 
-</div></div><div class="editable-style silex-id-1548873003503-4 html-element silex-component silex-component-map silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><div id="mapdiv_1715131879180_671" class="map"></div>
+</div></div><div class="editable-style silex-id-1548873003503-4 html-element silex-component silex-component-map silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><div id="mapdiv_1715132179407_977" class="map"></div>
 
 <script>
 
 
-function init_1715131879180_671() {
+function init_1715132179407_977() {
     if(typeof(ol) === 'undefined') {
         // console.warn('Map not ready, restart later')
         // wait for dependencies to be loaded
-        setTimeout(init_1715131879180_671, 1000);
+        setTimeout(init_1715132179407_977, 1000);
         return;
     }
 
     // empty the div before adding the map again
-    $('#mapdiv_1715131879180_671').empty();
+    $('#mapdiv_1715132179407_977').empty();
 
     // apply position and zoom
     // from map URL http://www.openstreetmap.org/#map=18/48.88680/2.34235&layers=C
@@ -250,7 +250,7 @@ function init_1715131879180_671() {
               source: new ol.source.OSM()
             })
           ],
-          target: 'mapdiv_1715131879180_671',
+          target: 'mapdiv_1715132179407_977',
           view: new ol.View({
             center: center,
             zoom: zoom
@@ -259,10 +259,10 @@ function init_1715131879180_671() {
         
     }
 }
-init_1715131879180_671();
+init_1715132179407_977();
 // $(document).on('silex.resize', function() {
-//     $('#mapdiv_1715131879180_671').empty();
-//     init_1715131879180_671();
+//     $('#mapdiv_1715132179407_977').empty();
+//     init_1715132179407_977();
 // });
 
 </script>
